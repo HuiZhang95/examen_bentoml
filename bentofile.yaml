@@ -1,0 +1,23 @@
+service: "src.service:rf_service"
+description: "Random Forest Regressor Service for predicting the chance of administration"
+labels:
+  owner: "ZHANG"
+  project: "exam_prediction"
+
+docker:
+  dockerfile_template: "./Dockerfile.template"
+  base_image: python:3.8-slim
+
+include:
+  - src/
+  - data/
+
+python:
+  packages:
+    - numpy
+    - pandas
+    - scikit-learn
+    - bentoml
+    - pydantic
+    - requests
+    - pyjwt

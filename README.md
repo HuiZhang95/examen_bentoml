@@ -1,4 +1,20 @@
 # Examen BentoML
+1. import data to local disk:
+    import_raw_data.py
+2. data preprocessing, train-test split, normalization
+    prepare_data.py
+3. train a randomforestregression model
+    train_model.py
+4. Code to perform unit test using pytest
+    test_app.py
+5. The commands to run unit test:
+    python3 -m pytest src/test_app.py
+6. compressed container image for the app
+    bento_image_final.tar
+7. docker image on docker hub:
+    rf_exam_service:stbb7hg4googev5i
+
+
 
 Ce repertoire contient l'architecture basique afin de rendre l'évaluation pour l'examen BentoML.
 
